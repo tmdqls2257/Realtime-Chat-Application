@@ -22,7 +22,6 @@ function RoomsContainer() {
 
   function handleJoinRoom(key) {
     if (key === roomId) return;
-
     socket.emit(EVENTS.CLIENT.JOIN_ROOM, key);
   }
 
